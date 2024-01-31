@@ -1,0 +1,31 @@
+Arguments: 
+  /home/matheus/.nvm/versions/node/v18.17.1/bin/node /mnt/c/Users/matma/AppData/Roaming/npm/node_modules/yarn/bin/yarn.js add typescript @types/node tsx tsup -D
+
+PATH: 
+  /home/matheus/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/home/matheus/.local/bin:/home/matheus/bin:/home/matheus/.nvm/versions/node/v18.17.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Eclipse Adoptium/jdk-11.0.16.101-hotspot/bin:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/matma/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/matma/AppData/Roaming/npm:/mnt/c/Users/matma/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/matma/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Android/Sdk/emulator:/mnt/c/Android/Sdk/tools:/mnt/c/Android/Sdk/tools/bin:/mnt/c/Android/Sdk/platform-tools:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/flutter/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/matma/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/matma/AppData/Roaming/npm:/mnt/c/Users/matma/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/matma/.dotnet/tools:/mnt/c/Users/matma/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Users/matma/AppData/Local/Programs/Azure Data Studio/bin:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.17.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/matheus/projects/backend-trowel/package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /mnt/c/Users/matma/AppData/Roaming/npm/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/mnt/c/Users/matma/AppData/Roaming/npm/node_modules/yarn/lib/cli.js:310:30)
+      at /mnt/c/Users/matma/AppData/Roaming/npm/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
