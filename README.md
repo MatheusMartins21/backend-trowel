@@ -4,9 +4,9 @@ Trowel
 
 ## RFs (Requisitos funcionais)
 
-- [ ] Deve ser possível se cadastrar;
-- [ ] Deve ser possível se autenticar;
-- [ ] Deve ser possível obter o perfil de um usuário;
+- [x] Deve ser possível se cadastrar;
+- [x] Deve ser possível se autenticar;
+- [x] Deve ser possível obter o perfil de um usuário;
 - [ ] Deve ser possível o usuário cadastrar uma meta;
 - [ ] Deve ser possível o usuário excluir uma meta;
 - [ ] Deve ser possível o usuário obter suas metas;
@@ -19,7 +19,7 @@ Trowel
 
 ## RNs (Regras de negócios)
 
-- [ ] O usuário não deve poder se cadastrar com um e-mail duplicado;
+- [x] O usuário não deve poder se cadastrar com um e-mail duplicado;
 - [ ] O usuário não pode concluir 2 vezes um objetivo;
 - [ ] O usuário não pode finalizar 2 vezes sua meta;
 - [ ] O usuário pode adicionar apenas um orçamento por meta;
@@ -30,8 +30,8 @@ Trowel
 
 ## RNFs (Requisitos não-funcionais)
 
-- [ ] A senha do usuário precisa estar criptografada;
-- [ ] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
+- [x] A senha do usuário precisa estar criptografada;
+- [x] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
 - [ ] A lista de metas precisam ser paginadas em 4;
 - [ ] A lista de objetivos precisam ser paginadas em 10;
 - [ ] O usuário deve ser identificado por um JWT (JSON Web Token);

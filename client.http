@@ -9,3 +9,14 @@ Content-Type: application/json
   "email": "matheus@teste.com.br",
   "password": "12345678"
 }
+
+###
+
+# @name create_session
+POST {{baseUrl}}/sessions
+Content-Type: application/json
+
+{
+  "email": "matheus@teste.com.br",
+  "password": "12345678"
+}
