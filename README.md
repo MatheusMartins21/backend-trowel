@@ -7,24 +7,24 @@ Trowel
 - [x] Deve ser possível se cadastrar;
 - [x] Deve ser possível se autenticar;
 - [x] Deve ser possível obter o perfil de um usuário;
-- [ ] Deve ser possível o usuário cadastrar uma meta;
-- [ ] Deve ser possível o usuário excluir uma meta;
-- [ ] Deve ser possível o usuário obter suas metas;
+- [x] Deve ser possível o usuário cadastrar sua meta;
+- [x] Deve ser possível o usuário atualizar sua meta;
+- [x] Deve ser possível o usuário excluir sua meta;
 - [ ] Deve ser possível o usuário cadastrar objetivos de suas metas;
+- [ ] Deve ser possível o usuário atualizar objetivos de suas metas;
 - [ ] Deve ser possível o usuário excluir objetivos de suas metas;
-- [ ] Deve ser possível o usuário obter os objetivos de suas metas;
-- [ ] Deve ser possível o usuário concluir um objetivo;
-- [ ] Deve ser possível o usuário visualizar seu percentual de conclusão da meta;
-- [ ] Deve ser possível o usuário visualizar o extrato da meta;
+- [x] Deve ser possível o usuário obter suas metas e objetivos conjuntos;
+- [ ] Deve ser possível o usuário concluir seu objetivo;
+- [ ] Deve ser possível o usuário concluir sua meta;
 
 ## RNs (Regras de negócios)
 
 - [x] O usuário não deve poder se cadastrar com um e-mail duplicado;
-- [ ] O usuário não pode concluir 2 vezes um objetivo;
 - [ ] O usuário não pode finalizar 2 vezes sua meta;
-- [ ] O usuário pode adicionar apenas um orçamento por meta;
+- [ ] O usuário não pode concluir 2 vezes um objetivo;
+- [x] O usuário pode adicionar apenas um orçamento por meta;
 - [ ] O usuário pode adicionar apenas um gasto por objetivo;
-- [ ] O usuário pode adicionar apenas uma imagem por meta;
+- [x] O usuário pode adicionar apenas uma imagem por meta;
 - [ ] O usuário pode adicionar apenas uma imagem por objetivo;
 - [ ] O usuário pode adicionar apenas um link de referência por objetivo;
 
@@ -34,4 +34,4 @@ Trowel
 - [x] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
 - [ ] A lista de metas precisam ser paginadas em 4;
 - [ ] A lista de objetivos precisam ser paginadas em 10;
-- [ ] O usuário deve ser identificado por um JWT (JSON Web Token);
+- [x] O usuário deve ser identificado por um JWT (JSON Web Token);
