@@ -5,7 +5,9 @@ import { remove } from './remove.controller'
 import { get } from './get.controller'
 
 export async function goalsRoutes(app: FastifyInstance) {
-  app.post('/goals', { onRequest: [verifyJWT] }, create)
-  app.delete('/goals/:goalId', { onRequest: [verifyJWT] }, remove)
-  app.get('/goals', { onRequest: [verifyJWT] }, get)
+  app.addHook('onRequest', verifyJWT)
+
+  app.post('/goals', create)
+  app.delete('/goals/:goalId', remove)
+  app.get('/goals', get)
 }
