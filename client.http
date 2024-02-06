@@ -37,7 +37,7 @@ Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
 {
-  "title": "Teste de Meta",
+  "title": "Testeeee",
   "description": "",
   "budget": 3200,
   "deadline": "10/10/2024",
@@ -47,7 +47,7 @@ Authorization: Bearer {{authToken}}
 ###
 
 # @name delete_goal
-DELETE {{baseUrl}}/goals/27ce5ce6-fc7c-455f-a7dc-23cf0c70f448
+DELETE {{baseUrl}}/goals/7e390f36-5043-4ad7-b1dc-bad6f8cc086d
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
@@ -55,5 +55,54 @@ Authorization: Bearer {{authToken}}
 
 # @name get_user_goals
 GET {{baseUrl}}/goals
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+###
+
+# @name update_goal
+PUT {{baseUrl}}/goals/0b9c5992-5a47-42e0-8036-f871e9d57497
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+  "completed": false
+}
+
+###
+
+# @name create_objective
+POST {{baseUrl}}/objectives
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+  "goalId": "0b9c5992-5a47-42e0-8036-f871e9d57497",
+  "title": "Objetivo 3",
+  "expense": 4200
+}
+
+###
+
+# @name get_goals_objectives
+GET {{baseUrl}}/objectives/0b9c5992-5a47-42e0-8036-f871e9d57497
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+###
+
+# @name update_objective
+PUT {{baseUrl}}/objectives/d9c71704-42b8-4415-96c3-51d8c5166341
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+  "description": "Teste"
+}
+
+###
+
+# @name delete_objective
+DELETE {{baseUrl}}/objectives/2f2c9a38-eccf-4990-9b8e-3021acfe898e
 Content-Type: application/json
 Authorization: Bearer {{authToken}}

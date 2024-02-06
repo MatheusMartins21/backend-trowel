@@ -2,6 +2,7 @@ import fastify from 'fastify'
 import fastifyCookie from '@fastify/cookie'
 import { usersRoutes } from './http/controllers/users/routes'
 import { goalsRoutes } from './http/controllers/goals/routes'
+import { objectivesRoutes } from './http/controllers/objectives/routes'
 import { ZodError } from 'zod'
 import { env } from './env'
 import fastifyJwt from '@fastify/jwt'
@@ -15,7 +16,7 @@ app.register(fastifyJwt, {
     signed: false,
   },
   sign: {
-    expiresIn: '10m',
+    expiresIn: '1d',
   },
 })
 
@@ -23,6 +24,7 @@ app.register(fastifyCookie)
 
 app.register(usersRoutes)
 app.register(goalsRoutes)
+app.register(objectivesRoutes)
 
 app.setErrorHandler((error, _, reply) => {
   if (error instanceof ZodError) {

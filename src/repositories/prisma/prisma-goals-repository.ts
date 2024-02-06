@@ -1,5 +1,5 @@
 import { prisma } from '@/lib/prisma'
-import { Goal, Prisma } from '@prisma/client'
+import { Prisma } from '@prisma/client'
 import { GoalsRepository } from '../goals-repository'
 import dayjs from 'dayjs'
 
@@ -37,13 +37,17 @@ export class PrismaGoalsRepository implements GoalsRepository {
     return goal
   }
 
-  async update(data: Goal) {
-    await prisma.goal.update({
+  async update(data: Prisma.GoalUncheckedUpdateInput) {
+    const id = data.id?.toString() ?? ''
+
+    const goal = await prisma.goal.update({
       where: {
-        id: data.id,
+        id,
       },
       data,
     })
+
+    return goal
   }
 
   async remove(id: string, userId: string) {

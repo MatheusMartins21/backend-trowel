@@ -1,7 +1,7 @@
 import { Goal } from '@prisma/client'
 import { GoalsRepository } from '@/repositories/goals-repository'
-import { UsersRepository } from '@/repositories/users-repository'
 import { ResourceNotFoundError } from './errors/resource-not-found-error'
+import { ObjectivesRepository } from '@/repositories/objectives-repository'
 
 interface RemoveGoalUseCaseRequest {
   id: string
@@ -13,7 +13,10 @@ interface RemoveGoalUseCaseResponse {
 }
 
 export class RemoveGoalUseCase {
-  constructor(private goalsRepository: GoalsRepository) {}
+  constructor(
+    private goalsRepository: GoalsRepository,
+    private objectivesRepository: ObjectivesRepository,
+  ) {}
 
   async execute({
     id,
@@ -27,6 +30,7 @@ export class RemoveGoalUseCase {
       throw new ResourceNotFoundError()
     }
 
+    await this.objectivesRepository.removeByGoalId(id)
     await this.goalsRepository.remove(id, userId)
 
     const newGoals = await this.goalsRepository.findByUserId(userId)

@@ -4,11 +4,11 @@ import { FastifyRequest, FastifyReply } from 'fastify'
 import { z } from 'zod'
 
 export async function remove(request: FastifyRequest, reply: FastifyReply) {
-  const validateGoalIdParamsSchema = z.object({
+  const removeGoalParamsSchema = z.object({
     goalId: z.string().uuid(),
   })
 
-  const { goalId } = validateGoalIdParamsSchema.parse(request.params)
+  const { goalId } = removeGoalParamsSchema.parse(request.params)
 
   try {
     const removeGoalUseCase = makeRemoveGoalUseCase()

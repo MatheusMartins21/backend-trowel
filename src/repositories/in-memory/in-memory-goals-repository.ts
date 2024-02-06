@@ -40,7 +40,9 @@ export class InMemoryGoalsRepository implements GoalsRepository {
     return goal
   }
 
-  async update(data: Goal) {
+  async update(data: Prisma.GoalUncheckedUpdateInput) {
+    const id = data.id?.toString() ?? ''
+
     const newGoals = this.items.map((item) => {
       if (item.id === data.id) {
         return {
@@ -53,6 +55,10 @@ export class InMemoryGoalsRepository implements GoalsRepository {
     })
 
     this.items = newGoals
+
+    const goal = await this.findById(id)
+
+    if (goal) return goal
   }
 
   async remove(id: string, userId: string) {

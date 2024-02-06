@@ -10,23 +10,23 @@ Trowel
 - [x] Deve ser possível o usuário cadastrar sua meta;
 - [x] Deve ser possível o usuário atualizar sua meta;
 - [x] Deve ser possível o usuário excluir sua meta;
-- [ ] Deve ser possível o usuário cadastrar objetivos de suas metas;
-- [ ] Deve ser possível o usuário atualizar objetivos de suas metas;
-- [ ] Deve ser possível o usuário excluir objetivos de suas metas;
+- [x] Deve ser possível o usuário cadastrar objetivos de suas metas;
+- [x] Deve ser possível o usuário atualizar objetivos de suas metas;
+- [x] Deve ser possível o usuário excluir objetivos de suas metas;
 - [x] Deve ser possível o usuário obter suas metas e objetivos conjuntos;
-- [ ] Deve ser possível o usuário concluir seu objetivo;
-- [ ] Deve ser possível o usuário concluir sua meta;
+- [x] Deve ser possível o usuário concluir seu objetivo;
+- [x] Deve ser possível o usuário concluir sua meta;
 
 ## RNs (Regras de negócios)
 
 - [x] O usuário não deve poder se cadastrar com um e-mail duplicado;
-- [ ] O usuário não pode finalizar 2 vezes sua meta;
-- [ ] O usuário não pode concluir 2 vezes um objetivo;
+- [x] O usuário não pode alterar a finalização uma vez feita;
+- [x] O usuário não pode alterar a conclusão uma vez feita;
 - [x] O usuário pode adicionar apenas um orçamento por meta;
-- [ ] O usuário pode adicionar apenas um gasto por objetivo;
+- [x] O usuário pode adicionar apenas um gasto por objetivo;
 - [x] O usuário pode adicionar apenas uma imagem por meta;
-- [ ] O usuário pode adicionar apenas uma imagem por objetivo;
-- [ ] O usuário pode adicionar apenas um link de referência por objetivo;
+- [x] O usuário pode adicionar apenas uma imagem por objetivo;
+- [x] O usuário pode adicionar apenas um link de referência por objetivo;
 
 ## RNFs (Requisitos não-funcionais)
 
