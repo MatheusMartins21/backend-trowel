@@ -32,6 +32,4 @@ Trowel
 
 - [x] A senha do usuário precisa estar criptografada;
 - [x] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
-- [ ] A lista de metas precisam ser paginadas em 4;
-- [ ] A lista de objetivos precisam ser paginadas em 10;
 - [x] O usuário deve ser identificado por um JWT (JSON Web Token);
